@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg2.1.png");
+}
+
+canvas {
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#game-over-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0005;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-over {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #0003;
+    padding: 2em;
+    text-align: center;
+}
+
+#game-over #new-game{
+    padding: 1em;
+}
+
+#resume-game {
+    display: none;
+}
+
+#new-game {
+    border-radius: 8px;
+    border: 0.1px solid black;
+}
+
+.form-wrap {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0005;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #0003;
+    padding: 43px;
+    text-align: center;
+}
+
+.info-button {
+    background: #665dec;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px;
+    /*margin: 20px 0 0 0;*/
+    width: 100%;
+    border: none;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.active, .info-button:hover {
+    background: #352dad;
+}
+
+.info-content {
+    font-size: 12px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 12px 0 12px;
+}
+
+.close {
+    float: right;
+    margin: -30px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    font-weight: bold;
+}
+
+#result {
+
+}
+
+#sending-result {
+    display: none;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 1em;
+    justify-content: center;
+    width: 100%;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#place {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#message {
+    color: red;
+}
+
+#come, #exit {
+    display: none;
+    border-radius: 8px;
+    border: 0.1px solid black;
+
+}
+
+#login {
+    font-weight: bold;
+    color: blue;
+    font-size: 20px;
+}
